@@ -54,3 +54,8 @@ h2 {
   margin-left: 20px;
   padding: 120px 20px;
 }
+
+.hanging div.bib-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
