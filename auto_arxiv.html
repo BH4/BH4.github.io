@@ -18,7 +18,7 @@
     <a href="Shock_modeling_and_emulators.html">Shock modeling<br>and emulators</a>
     <a href="publications.html">Publications</a>
     <h1>Projects</h1>
-    <a href="auto_arxiv.html">Auto Arxiv search</a>
+    <a href="auto_arxiv.html">Auto arxiv search</a>
     <a href="echo_mouse.html">Echo Mouse</a>
     <a href="deep_reinforcement_learning.html">Deep reinforcement learning</a>
     <a href="project_euler.html">Project Euler</a>
@@ -31,13 +31,23 @@
 
     <div id="auto_arxiv" class="section">
 
-      <h2>Auto ArXiv search</h2>
+      <h2>Auto arXiv search</h2>
 
-        <p>Most of my personal projects have had to do with automation in some way and this is no exception. As I've progressed in physics the need to keep up with current advances in my field has increased, but the field has also become more niche. This means that I was spending at least an hour every day looking through the pre-print repository, ArXiv, just to find maybe one paper ever other week that was useful to me.</p>
+        <p>One of my more useful personal projects is a small tool I built to make it easier to keep up with new papers on the arXiv. I was frustrated with manually checking categories every day, so I wrote a script to filter and deliver only what I actually wanted to see.</p>
 
-        <p>There are really only a few criteria that a paper needed to satisfy for me to need to read it: the author is known to me and publishes in my field or the paper includes current keywords which mark it as a part of my field. At the time of writing this the second category was papers on nuclear physics which utilized machine learning in any way. Once I had my python code reading the new papers each day, using ArXiv's rss feed, these are easy enough to filter for. More difficult for me personally was getting the project to automatically send me an email with these papers. Ensuring the project remains authorized on the email account was new to me but a necessity. Now instead of spending an hour every day I get a weekly email summary for the papers I need to see.</p>
+        <p>The project started as a basic keyword searcher, but I gradually added features to make it more useful:</p>
 
-        <p>Since I've never tried to promote any of my personal projects, this is most likely the only one with more than one user. My wife found this a great idea as well and also utilizes it.</p>
+        <ul>
+          <li>Custom filtering by category, keywords, and authors.</li>
+
+          <li>Daily or weekly email summaries of matching papers.</li>
+
+          <li>Weighting paper importance through filtering so that the most relevant papers are shown first.</li>
+        </ul>
+
+        <p>What began as a quick utility turned into one of the most useful scripts I've written for myself. It saves time, reduces the noise of irrelevant papers, and makes it easier to keep up with topics I care about without falling behind. As an additional bonus I've found useful papers in categories I didn't used to check often using this tool.</p>
+
+        <p>Like a lot of my projects, this grew out of a personal need but became a chance to practice building something more complete.</p>
 
         <p><a href="https://github.com/BH4/arxiv-paper-search" title="GitHub: arxiv-search project">Link to the project</a></p>
 
