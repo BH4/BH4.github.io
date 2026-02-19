@@ -53,6 +53,33 @@
 
     </div>
 
+    <h2>Example, description, and setup</h2>
+
+
+    <div id="example setup" class="section">
+
+      <p>
+        The below image shows a single paper returned by the project, taken from the full email shown to the right. Each paper returned specifies the subject it was found in as well as the keyword and author matches that were found.
+      </p>
+
+      <img src="examples/single_arxiv_example.png" alt="Image of a single arxiv summary from the arxiv-search project" style="width:800px;height:285px;">
+
+      <p>
+        The first setting used is the list of arxiv subjects to be searched. The arxiv-paper-search project checks the current day's rss feed for each of the chosen subjects. From there sets of keywords are established within groups. For example, adding the group ('NN', ['neural-network', 'machine learning']) ensures the title and abstract of a paper will be searched for both 'neural-network' and 'machine learning' with the single group identifier of 'NN' used to label that either has been found. Additionally, a list of authors can be included which will be searched for by full name and first initial with last name.
+      </p>
+      <p>
+        Finally, the identified aspects of interest are passed into a customizable function which returns a number indicating how relevant the paper is or if it is not to be kept. My version of this function looks for any paper which includes neural network quantum states, any paper which includes authors from my watched list, or any other paper which fits two or more of my keyword groups.
+      </p>
+      
+    </div>
+
+
+  </div>
+
+  <div class="rightimage">
+
+    <img src="examples/full_arxiv_email.png" alt="Image of arxiv summaries from the arxiv-search project" style="width:375px;height:858px;">
+
   </div>
 
 </body>
