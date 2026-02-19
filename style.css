@@ -31,16 +31,28 @@ body {
 .content {
   margin-left: 220px;
   padding: 40px 20px;
-  max-width: 800px;
+  /* max-width: 800px; */
 }
 
 h2 {
   font-size: 1.5em;
-  margin-top: 1.5em;
+  margin-top: 0.5em;
 }
 
 .section {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+.two-column-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.experience-title {
+  display: grid;
+  grid-template-columns: 150px 1fr; /* fixed left column */
+  align-items: center;
 }
 
 .flex-container {
@@ -52,8 +64,19 @@ h2 {
 
 .rightimage {
   margin-left: 20px;
-  padding: 120px 20px;
+  padding: 100px 20px;
 }
+
+.rightimage h2 {
+  font-size: 1.5em;
+  margin-top: 0.5;
+}
+
+.circular-image {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 
 .hanging div.bib-entry {
   margin-left:2em;
